@@ -69,11 +69,11 @@ main section h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     padding: 1rem;
-    border-bottom: solid 4px black;
+    border-bottom: solid 4px whitesmoke;
 }
 .info{
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
 }
 section{
@@ -81,9 +81,9 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90vw;
-    height: 100vh;
-    padding: 25px;
+    width: 95vw;
+    height: 125vh;
+
     background-color: rgb(47, 49, 54);
     margin-top: 2rem;
     border-top-left-radius: 1%;
@@ -92,7 +92,6 @@ section{
 }
 section > *{
     margin: 1rem;
-    flex: 1;
 }
 img{
     max-width: 720px;
@@ -100,11 +99,52 @@ img{
     min-width: 200px;
     width: 20vw;
 }
+.container{
+    background-color: rgb(64, 68, 75);
+    border-radius: 5px;
+    width: 60vw;
+    height: 40vh;
+    padding: 15px;
+}
+.footer{
+
+}
+.tribute-link{
+    
+}
 @media only screen and (max-width: 1050px) {
     section{
-        height: 115vh;
+        height: 145vh;
     }
     .info{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
+@media only screen and (max-width: 750px) {
+    section{
+        height: 160vh;
+        padding: 15px;
+        width: 90vw;
+    }
+    .info{
+        font-size: 1.2rem;
+    }
+    .container{
+        height: 50vh;
+        width: 60vw;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    section{
+        height: 300vh;
+        padding: 15px;
+    }
+    .info{
+        font-size: 1.2rem;
+    }
+    .container{
+        height: 75vh;
+        width: 65vw;
+    }
+  }
