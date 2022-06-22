@@ -106,15 +106,23 @@ img{
     height: 40vh;
     padding: 15px;
 }
-.footer{
-
+footer{
+    background-color: rgb(32, 34, 37);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.tribute-link{
-    
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+
 }
 @media only screen and (max-width: 1050px) {
     section{
-        height: 145vh;
+        height: 160vh;
     }
     .info{
         font-size: 1.3rem;
@@ -122,7 +130,7 @@ img{
 }
 @media only screen and (max-width: 750px) {
     section{
-        height: 160vh;
+        height: 180vh;
         padding: 15px;
         width: 90vw;
     }
