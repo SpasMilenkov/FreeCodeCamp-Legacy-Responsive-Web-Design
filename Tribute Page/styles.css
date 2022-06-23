@@ -119,8 +119,28 @@ footer a{
     font-family: 'Montserrat', sans-serif;
 
 }
+button{
+    position: fixed;
+    z-index: 100;
+    top: 10vh;
+    left: 5vw;
+    background: rgb(32, 34, 37);
+    border: solid 1px rgb(32, 34, 37);
+    border-radius: 70%;
+}
+.light-mode{
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.dark-text{
+    color: black;
+}
 
 @media only screen and (max-width: 1050px) {
+    button{
+        top: 15vh;
+    }
     section{
         height: 160vh;
     }
@@ -148,6 +168,10 @@ footer a{
         height: 300vh;
         max-height: 350vh;
         padding: 15px;
+    }
+    button{
+        top: 25vh;
+        left: 3vw;
     }
     .info{
         font-size: 1.2rem;
