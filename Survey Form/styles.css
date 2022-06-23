@@ -153,3 +153,13 @@ button{
 label{
     margin-right: auto;
 }
+#selection-menu{
+    width: 20vw;
+    min-width: 200px;
+    outline: none;
+    border-width: 3px 3px 3px 3px;
+    border-color: rgb(187, 51, 80);
+    border-radius: 5px;
+    background-color: rgb(187, 51, 80);
+    color: var(--c-white);
+}
