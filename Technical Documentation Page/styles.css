@@ -1,0 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---VARIABLES--- */
+:root{
+    /* font sizes*/
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+
+    /* colors */
+    --c-red: rgb(73, 20, 32);
+    --c-white: whitesmoke;
+}
+
+/* ---VARIABLES--- */
+
+/* ---CLASSES--- */
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.font-fjord{
+    font-family: 'fjord', Arial, sans-serif;
+}
+.font-treb{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.-fs-large-font{
+    font-size: var(--fs-600);
+}
+.-fs-semi-large{
+    font-size: var(--fs-500);
+}
+.-fs-medium{
+    font-size: var(--fs-400);
+}
+.-fs-small{
+    font-size: var(--fs-300);
+}
+.capitalize{
+     text-transform: uppercase;
+}
+.rounded-corners{
+    border-radius: 5px;
+}
+.bold{
+    font-weight: bold;
+}
+/* ---CLASSES--- */
