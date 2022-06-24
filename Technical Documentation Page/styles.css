@@ -41,6 +41,22 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* ---CSS RESET--- */
+
+@font-face {
+    font-family: 'hanzo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Hattori Hanzo Light'), url('Hattori_Hanzo.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'rokkitt';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rokkitt'), url('Rokkitt-Regular.woff') format('woff');
+}
+
 /* ---VARIABLES--- */
 :root{
     /* font sizes*/
@@ -50,8 +66,11 @@ table {
     --fs-300: 1rem;
 
     /* colors */
-    --c-red: rgb(73, 20, 32);
-    --c-white: whitesmoke;
+    --c-black: hsl(228, 19%, 5%);
+    --c-dark-gray: hsl(215, 23%, 16%);
+    --c-gray: hsl(210, 4%, 78%);
+    --c-light-blue: hsl(176, 96%, 69%);
+    --c-dark-blue: hsl(178, 40%, 45%);
 }
 
 /* ---VARIABLES--- */
@@ -62,13 +81,12 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
 }
-.font-fjord{
-    font-family: 'fjord', Arial, sans-serif;
+.-f-rokkit{
+    font-family: 'rokkitt', Arial, sans-serif;
 }
-.font-treb{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.-f-hanzo{
+    font-family: 'hanzo', Arial, sans-serif;
 }
 .-fs-large-font{
     font-size: var(--fs-600);
@@ -92,3 +110,43 @@ table {
     font-weight: bold;
 }
 /* ---CLASSES--- */
+html{
+    overflow: hidden;
+}
+body{
+    flex-direction: row !important;
+    padding: 0;
+    margin: 0;
+}
+main{
+    height: 100vh;
+    width: 90vw;
+}
+#main-nav{
+    width: clamp(250px, 20vw, 300px);
+    height: 100vh;
+    background-color: var(--c-black);
+    border-right: solid 3px var(--c-light\-blue) ;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--c-light-blue);
+    margin: 0;
+    left: 0;
+}
+nav ul li {
+    margin: 15px 5px 0px 5px;
+    width: 95%;
+    height: 50px ;
+    background-color: var(--c-dark-gray);
+    border: solid 2px var(--c-dark-blue);
+}
+nav ul{
+    width: clamp(250px, 20vw, 300px);
+}
+section{
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-dark-gray);
+    gap: 1rem;
+}
