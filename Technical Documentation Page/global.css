@@ -128,7 +128,9 @@ body{
     flex-direction: row !important;
 }
 main{
-    height: 550vh;
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
     width: 84%;
 }
 #main-nav{
@@ -141,7 +143,7 @@ main{
     top: 0;
     margin-bottom: auto;
     z-index: 100;
-
+    box-shadow: hsl(176, 96%, 69%, 40%) 0px 5px 15px;
 }
 nav ul li a{
     width: 100%;
@@ -149,13 +151,18 @@ nav ul li a{
     text-decoration: none;
     margin: 0;
     left: 0;
+    color: whitesmoke;
 }
 nav ul li {
     margin: 15px 5px 0px 5px;
     width: 95%;
     height: 50px ;
     background-color: var(--c-dark-gray);
-    border: solid 2px var(--c-dark-blue);
+}
+nav ul li a:hover{
+    background-color: var(--c-light-blue);
+    color: black;
+    border-radius: 5px;
 }
 nav ul{
     width: 100%;
@@ -174,6 +181,7 @@ main section div h2{
     background-color: var(--c-black);
     color: white;
     padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 main section div h2 span{
     margin-right: auto;
@@ -189,6 +197,7 @@ main section div h2 span{
     color: white;
     width: 95%;
     padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #requirements-paragraph{
     height: 150vh;
@@ -202,9 +211,14 @@ pre {
     text-align: left;
     word-break: keep-all;
     line-height: 30px;
-    border-left: solid 5px var(--c-green);
-    padding-left: 5px;
+    border-left: solid 5px hsl(356, 96%, 69%);
     margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+pre:hover{
+    background-color: hsl(227, 20%, 17%);
+    border-radius: 5px;
 }
 #intro-paragraph{
     height: 25vh;
