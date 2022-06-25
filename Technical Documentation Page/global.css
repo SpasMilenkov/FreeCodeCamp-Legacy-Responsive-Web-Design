@@ -122,12 +122,24 @@ table {
     color: var(--c-dark-gray);
 }
 /* ---CLASSES--- */
+pre {
+    white-space: pre-line;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    text-align: left;
+    word-break: keep-all;
+    line-height: 30px;
+    border-left: solid 5px var(--c-dark-blue);
+    padding-left: 5px;
+    }
 body{
-    width: calc(100vw - (100vw - 100%));
+    /* width: calc(100vw - (100vw - 100%)); */
     flex-direction: row !important;
 }
 main{
-    height: 150vh;
+    height: 550vh;
     width: 84%;
 }
 #main-nav{
@@ -177,13 +189,16 @@ main section div h2 span{
 }
 .container{
     width: 80vw;
-    height: 50vh;
+    height: 200vh;
     gap: 15px;
 }
 .info{
     background-color: var(--c-black);
+    height: 100vh;
     color: white;
-    height: 13vh;
     width: 80vw;
     padding: 15px;
+}
+#requirements{
+    height: 150vh;
 }
