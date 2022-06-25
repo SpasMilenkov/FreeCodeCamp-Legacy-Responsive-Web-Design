@@ -20,13 +20,16 @@
         <section class="content flex">
             <div class="container flex" id="container1">
                 <h2 class="-fs-large -f-rokkitt rounded-corners flex"><span>Intro</span></h2>
-                <p1 class="info -fs-medium -f-hanzo rounded-corners" id="intro-paragraph"><pre>
+                <p1 class="info -fs-medium -f-hanzo rounded-corners" id="intro-paragraph">
+                    <pre>
                     This is the course work I did for my object oriented programming class, part of my first year of programming in university. The theme of the project is School Management System.
-                <pre><code></code></pre>
+                    The program is inspired by existing platforms such as Moodle and aims to provide a user-friendly graphical interface to the user using Windows Forms technology. The program will provide a set of functionalities to the user depending on his/her position (student, professor, administrator, parent), among which will be: displaying students' grades in the form of a graph and their schedule in the form of an interactive calendar, the ability of administrators and professors to add new events (lectures, seminar exercises and lab exercises), etc. 
+                    </pre>
+                </p1>
             </div>
             <div class="container flex">
                 <h2 class="-fs-large -f-rokkitt rounded-corners flex"><span>Requirements</span></h2>
-                <p1 class="info -fs-medium -f-hanzo" id="requirements-paragraph">
+                <p1 class="info -fs-medium -f-hanzo rounded-corners" id="requirements-paragraph">
                     <pre>
                         <span class="-fs-semi-large capitalize">Requirements:</span>
                         The coursework must be completed in three stages, with a deadline for each stage to be submitted to Moodle. After the end of the third stage, a date will be set for a project defense in which the student must demonstrate the functionality of the program as well as answer questions about its implementation. During the development process, each of the stages already handed in is subject to change (should this be necessary).
@@ -74,11 +77,15 @@
             </div>
             <div class="container flex">
                 <h2 class="-fs-large -f-rokkitt rounded-corners flex"><span>Features</span></h2>
-                <p1 class="info -fs-medium -f-hanzo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p1>
+                <p1 class="info -fs-medium -f-hanzo rounded-corners" id="features-paragraph">
+                    <pre>The program supports 2 class hierarchies: one for the users of the program and one for the different types of events that will be entered into the interactive calendar. All users will inherit the Person base class and its properties, and through the use of virtual methods will perform their own specific functions. The user classes supported by the program are: professor, student, parent, administrator. The second hierarchy of classes includes the different types of calendar events. They all inherit the base class Event and override its functions as needed. All objects inheriting the Person class are stored in a private List (storing objects of type Person) and are encapsulated, the same applies to objects of type Event.</pre>
+                    <pre>The program supports the functionality of storing and graphically representing student grades in the form using the Oxyplot.Core library. Their gradings will be stored in a separate text file using an ID number unique to the student. Their grade point average, with that of the other students in their class, will also be presented in graph form, allowing their easy comparison. Additionally, the grades will be present in the form of a table containing the name of the subject and the student's grades in that subject.</pre>
+                    <pre>The program will have a calendar form that will allow the entry of different types of events by professors and administrators with the ability for the type and content of an event to be viewed by students and parents without the ability to make changes by them. Each date will have an OnClick Event that will open a dialog box from where: the type of event and short notes about it can be entered when opened by an administrator or professor, and when opened by a student or parent it will show the organizer of the event, the time, the hour and the short notes left by him. Each day of the calendar will be a separate item created through the User Control and DateTime functionalities, allowing the dynamic loading of future and previous months and their events. All events will be stored in a sheet, and when the window is closed, will be entered into a text document and loaded at the time of form initialization.</pre>
+                </p1>
             </div>
             <div class="container flex">
-                <h2 class="-fs-large -f-rokkitt rounded-corners flex"><span>Implementatino</span></h2>
-                <p1 class="info -fs-medium -f-hanzo">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p1>
+                <h2 class="-fs-large -f-rokkitt rounded-corners flex"><span>Implementation</span></h2>
+                <p1 class="info -fs-medium -f-hanzo rounded-corners">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p1>
             </div>
         </section>
     </main>

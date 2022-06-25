@@ -126,6 +126,7 @@ table {
 body{
     /* width: calc(100vw - (100vw - 100%)); */
     flex-direction: row !important;
+    background-color: var(--c-black);
 }
 main{
     position: relative;
@@ -187,20 +188,17 @@ main section div h2 span{
     margin-right: auto;
 }
 .container{
-    width: 80vw;
-    height: 200vh;
+    width: 95%;
+    height:fit-content;
     gap: 15px;
 }
 .info{
     background-color: var(--c-black);
-    height: 100vh;
+    height: fit-content;
     color: white;
     width: 95%;
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-#requirements-paragraph{
-    height: 150vh;
 }
 pre {
     white-space: pre-line;       /* Since CSS 2.1 */
@@ -219,13 +217,4 @@ pre {
 pre:hover{
     background-color: hsl(227, 20%, 17%);
     border-radius: 5px;
-}
-#intro-paragraph{
-    height: 25vh;
-}
-#container1{
-    height: 50vh
-}
-#container1 p1 pre{
-    border-left: none;
 }
