@@ -213,8 +213,23 @@ pre {
     margin-top: 20px;
     border-radius: 5px;
     padding: 10px;
-}
+    margin-bottom: 10px;
+} 
 pre:hover{
     background-color: hsl(227, 20%, 17%);
     border-radius: 5px;
+}
+#intro-paragraph pre{
+    border-left: solid 5px hsl(86, 96%, 69%);
+}
+#features-paragraph pre{
+    border-left: solid 5px hsl(266, 96%, 69%);
+}
+#implementation-paragraph pre{
+    border-left: solid 5px hsl(56, 96%, 69%);
+}
+pre code {
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
 }
