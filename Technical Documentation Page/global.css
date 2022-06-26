@@ -1,3 +1,5 @@
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,20 +44,6 @@ table {
 	border-spacing: 0;
 }
 /* ---CSS RESET--- */
-
-@font-face {
-    font-family: 'hanzo';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Hattori Hanzo Light'), url('Hattori_Hanzo.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'rokkitt';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Rokkitt'), url('Rokkitt-Regular.woff') format('woff');
-}
 
 /* ---VARIABLES--- */
 :root{
@@ -124,7 +112,6 @@ table {
 }
 /* ---CLASSES--- */
 body{
-    /* width: calc(100vw - (100vw - 100%)); */
     flex-direction: row !important;
     background-color: var(--c-black);
 }
@@ -134,7 +121,7 @@ main{
     min-height: 100% !important;
     width: 84%;
 }
-#main-nav{
+nav{
     width: 16%;
     min-width: 250px;
     height: 100vh;
@@ -155,7 +142,7 @@ nav ul li a{
     color: whitesmoke;
 }
 nav ul li {
-    margin: 15px 5px 0px 5px;
+    margin: 5px 5px 0px 5px;
     width: 95%;
     height: 50px ;
     background-color: var(--c-dark-gray);
@@ -165,9 +152,17 @@ nav ul li a:hover{
     color: black;
     border-radius: 5px;
 }
+nav ul li a:focus{
+    background-color: var(--c-light-blue);
+    color: black;
+    border-radius: 5px;
+}
 nav ul{
     width: 100%;
     min-width: 250px;
+}
+#dropdown{
+    display: none;
 }
 section{
     width: 100%;
@@ -190,7 +185,6 @@ main section div h2 span{
 .container{
     width: 95%;
     height:fit-content;
-    gap: 15px;
 }
 .info{
     background-color: var(--c-black);
@@ -232,4 +226,55 @@ pre code {
     display: block;
     padding: 20px;
     white-space: pre-wrap;
+}
+@media only screen and (max-width: 750px){
+    section{
+        gap: 0;
+    }
+    section:first-child {
+        margin-top: 70px;
+    }
+    .responsive{
+        background-color: var(--c-black);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 60px;
+        overflow: hidden;
+        border-bottom: solid 3px var(--c-light-blue);
+        border-left: none;
+        box-shadow: hsl(176, 96%, 69%, 30%) 0px 5px 15px;
+        z-index: 999;
+    }
+    nav ul:not(:first-child){
+        display: none;
+        visibility: hidden;
+    }
+    #dropdown{
+        display: block;
+    }
+    #dropdown a i{
+        margin-left: auto;
+    }
+    #dropdown a{
+        margin-left: auto;
+        width: fit-content;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .expanded{
+        width: 100%;
+        height: 275px;
+        background-color: var(--c-black);
+        border-right: solid 3px var(--c-light\-blue) ;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-bottom: auto;
+        z-index: 100;
+        border-bottom: solid 3px var(--c-light-blue);
+        box-shadow: hsl(176, 96%, 69%, 30%) 0px 5px 15px;
+    }
 }
