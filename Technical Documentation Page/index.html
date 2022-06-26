@@ -5,21 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Technical Documentation Page/global.css"/>
+    <link rel="preload" as="font" href="/Technical Documentation Page/Hattori_Hanzo.woff" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/Technical Documentation Page/Rokkitt-Regular.woff" type="font/ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body class="flex">
-    <nav id="main-nav">
+    <nav id="main-nav" class="expanded responsive">
         <ul>
-            <li class="nav-item -fs-semi-large flex rounded-corners"><a class="-f-rokkitt flex"href="">Intro</a></li>
-            <li class="nav-item -fs-semi-large flex rounded-corners"><a class="-f-rokkitt flex" href="">Requirements</a></li>
-            <li class="nav-item -fs-semi-large flex rounded-corners"><a class="-f-rokkitt flex" href="">Features</a></li>
-            <li class="nav-item -fs-semi-large flex rounded-corners"><a class="-f-rokkitt flex" href="">Implementation</a></li>
+            <li class="nav-item -fs-semi-large flex" id="dropdown" style="padding-right: 5px;">
+                <a class="-f-rokkitt flex" href="javascript:void(0)" onclick="navButton()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+            <li class="nav-item -fs-semi-large flex rounded-corners">
+                <a class="-f-rokkitt flex"href="#intro-heading">
+                    Intro
+                </a>
+            </li>
+            <li class="nav-item -fs-semi-large flex rounded-corners">
+                <a class="-f-rokkitt flex" href="#req-heading">
+                    Requirements
+                </a>
+            </li>
+            <li class="nav-item -fs-semi-large flex rounded-corners">
+                <a class="-f-rokkitt flex" href="#features-heading">
+                    Features
+                </a>
+            </li>
+            <li class="nav-item -fs-semi-large flex rounded-corners">
+                <a class="-f-rokkitt flex" href="#imp-heading">
+                    Implementation
+                </a>
+            </li>
         </ul>
     </nav>
     <main>
         <section class="content flex">
             <div class="container flex" id="container1">
-                <h2 class="-fs-large -f-rokkitt rounded-corners flex"><span>Intro</span></h2>
+                <h2 class="-fs-large -f-rokkitt rounded-corners flex" id="intro-heading"><span>Intro</span></h2>
                 <p1 class="info -fs-medium -f-hanzo rounded-corners" id="intro-paragraph">
                     <pre>
                     This is the course work I did for my object oriented programming class, part of my first year of programming in university. The theme of the project is School Management System.
@@ -28,7 +52,7 @@
                 </p1>
             </div>
             <div class="container flex">
-                <h2 class="-fs-large -f-rokkitt rounded-corners flex"><span>Requirements</span></h2>
+                <h2 class="-fs-large -f-rokkitt rounded-corners flex" id="req-heading"><span>Requirements</span></h2>
                 <p1 class="info -fs-medium -f-hanzo rounded-corners" id="requirements-paragraph">
                     <pre>
                         The coursework must be completed in three stages, with a deadline for each stage to be submitted to Moodle. After the end of the third stage, a date will be set for a project defense in which the student must demonstrate the functionality of the program as well as answer questions about its implementation. During the development process, each of the stages already handed in is subject to change (should this be necessary).
@@ -75,7 +99,7 @@
                     </pre></p1>
             </div>
             <div class="container flex">
-                <h2 class="-fs-large -f-rokkitt rounded-corners flex"><span>Features</span></h2>
+                <h2 class="-fs-large -f-rokkitt rounded-corners flex" id="features-heading"><span>Features</span></h2>
                 <div class="info -fs-medium -f-hanzo rounded-corners" id="features-paragraph">
                     <pre>The program supports 2 class hierarchies: one for the users of the program and one for the different types of events that will be entered into the interactive calendar. All users will inherit the Person base class and its properties, and through the use of virtual methods will perform their own specific functions. The user classes supported by the program are: professor, student, parent, administrator. The second hierarchy of classes includes the different types of calendar events. They all inherit the base class Event and override its functions as needed. All objects inheriting the Person class are stored in a private List (storing objects of type Person) and are encapsulated, the same applies to objects of type Event.</pre>
                     <pre>The program supports the functionality of storing and graphically representing student grades in the form using the Oxyplot.Core library. Their gradings will be stored in a separate text file using an ID number unique to the student. Their grade point average, with that of the other students in their class, will also be presented in graph form, allowing their easy comparison. Additionally, the grades will be present in the form of a table containing the name of the subject and the student's grades in that subject.</pre>
@@ -83,7 +107,7 @@
                 </div>
             </div>
             <div class="container flex">
-                <h2 class="-fs-large -f-rokkitt rounded-corners flex"><span>Implementation</span></h2>
+                <h2 class="-fs-large -f-rokkitt rounded-corners flex" id="imp-heading"><span>Implementation</span></h2>
                 <div class="info -fs-medium -f-hanzo rounded-corners" id="implementation-paragraph">
                     <h2 class="-fs-semi-large -f-rokkitt">Base class User</h2>
                     <pre>
@@ -256,10 +280,30 @@ namespace OOPStage3Library.Classes.Events
                             }
                         </code>
                     </pre>
-                    <a class="-f-hanzo -fs-medium capitalize light-blue" target="_blank" style="text-decoration: none;"href="https://readthedocs.org/projects/oxyplot/downloads/pdf/latest/">Link to the Oxyplot documentation.</a>
+                    <a class="-f-hanzo -fs-medium capitalize light-blue" target="_blank" style="text-decoration: none; "href="https://readthedocs.org/projects/oxyplot/downloads/pdf/latest/">Link to the Oxyplot documentation.</a>
                 </div>
             </div>
         </section>
     </main>
+    <script>
+        let button = document.getElementById("main-nav");
+        window.onscroll = function() {scrollFunction()};
+        function navButton(){
+            if(button.classList.contains("expanded")){
+                button.classList.remove("expanded");
+                button.classList.add("responsive");
+                return;
+            }
+            button.classList.remove("responsive");
+            button.classList.add("expanded");
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                button.classList.remove("expanded");
+                button.classList.add("responsive");
+            } 
+        }
+    </script>
 </body>
 </html>
