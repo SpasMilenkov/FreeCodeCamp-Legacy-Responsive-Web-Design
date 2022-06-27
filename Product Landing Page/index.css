@@ -63,20 +63,24 @@ table {
   font-family: "Roboto", sans-serif;
 }
 
+.-fs-huge {
+  font-size: 6.25rem;
+}
+
 .-fs-large {
-  font-size: var(--fs-600);
+  font-size: 2rem;
 }
 
 .-fs-semi-large {
-  font-size: var(--fs-500);
+  font-size: 1.75rem;
 }
 
 .-fs-medium {
-  font-size: var(--fs-400);
+  font-size: 1.125rem;
 }
 
 .-fs-small {
-  font-size: var(--fs-300);
+  font-size: var(1rem);
 }
 
 .capitalize {
@@ -89,6 +93,10 @@ table {
 
 .bold {
   font-weight: bold;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 nav {
@@ -115,19 +123,35 @@ nav ul li a {
 
 main {
   min-width: 100vw;
-  min-height: 90vh;
+  min-height: 100vh;
 }
-main section {
-  height: 100%;
-}
-main section .poster {
+main .promo {
   height: 80vh;
+}
+main .promo .poster {
+  height: 100%;
   width: 100vw;
-  min-height: 80%;
-  min-width: 100%;
-  background-image: url("/Product Landing Page/Pictures/elegance2.webp");
+  background-image: url("/Product Landing Page/Pictures/elegance2.webp"), linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(106, 88, 88) 64%);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+main .promo .poster h1 {
+  color: hsl(240deg, 29%, 92%);
+  float: right;
+  margin-top: 10rem;
+  margin-right: 1rem;
+  width: 30%;
+  letter-spacing: 0.5rem;
+}
+main .features {
+  height: 50vh;
+  width: 100vw;
+  background-color: hsl(237deg, 24%, 33%);
+}
+main .connections {
+  height: 50vh;
 }
 
 /*# sourceMappingURL=index.css.map */
