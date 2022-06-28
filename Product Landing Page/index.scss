@@ -105,7 +105,7 @@ nav{
         height: 100%;
         li{
             width: 150px;
-            height: 80%;
+            height: 70%;
             margin: 10px;
             a{
                 width: 100%;
@@ -114,8 +114,17 @@ nav{
                 color: $white;
             }
         }
+        li:after {
+            display:block;
+            content: '';
+            border-bottom: solid 3px $white;  
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+          }
+        li:hover:after { transform: scaleX(1); }
     }
 }
+
 main{
     min-width: 100vw;
     min-height: 100vh;

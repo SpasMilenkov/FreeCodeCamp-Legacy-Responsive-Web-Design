@@ -111,7 +111,7 @@ nav ul {
 }
 nav ul li {
   width: 150px;
-  height: 80%;
+  height: 70%;
   margin: 10px;
 }
 nav ul li a {
@@ -119,6 +119,16 @@ nav ul li a {
   height: 100%;
   text-decoration: none;
   color: hsl(240deg, 29%, 92%);
+}
+nav ul li:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px hsl(240deg, 29%, 92%);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+nav ul li:hover:after {
+  transform: scaleX(1);
 }
 
 main {
