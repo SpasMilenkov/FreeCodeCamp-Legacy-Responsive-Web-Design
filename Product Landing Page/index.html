@@ -37,14 +37,40 @@
     </nav>
     <main class="flex">
         <section class="" id="promo">
-            <div class="poster">
+            <div class="background">
                 <h1 class="heading font-roboto -fs-huge">
                     Smart watches that suit every style
                 </h1>
             </div>
         </section>
-        <section class="" id="features">
-
+        <section class="flex" id="features">
+            <div class="background"></div>
+            <div class="flex">
+                <div class="card rounded-corners flex" id="card-1">
+                    <h2 class="font-roboto -fs-semi-large">
+                        Dummy text
+                    </h2>
+                    <p class="font-lato -fs-medium">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="card rounded-corners flex" id="card-2">
+                    <h2 class="font-roboto -fs-semi-large">
+                        Dummy text
+                    </h2>
+                    <p class="font-lato -fs-medium">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="card rounded-corners flex" id="card-3">
+                    <h2 class="font-roboto -fs-semi-large">
+                        Dummy text
+                    </h2>
+                    <p class="font-lato -fs-medium">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
         </section>
         <section class="" id="offers">
 
@@ -55,6 +81,7 @@
     </main>
     <script>
         const targets = document.querySelectorAll("h1");
+        const cards =  document.getElementsByClassName("card");
 
         const transition = target =>{
             const observer = new IntersectionObserver((entries, observer) => {
@@ -69,6 +96,7 @@
             observer.observe(target);
         };
         targets.forEach(transition);
+        cards.forEach(transition);
     </script>
 </body>
 </html>

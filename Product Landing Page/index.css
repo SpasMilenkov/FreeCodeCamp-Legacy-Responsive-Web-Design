@@ -128,7 +128,7 @@ main {
 main #promo {
   height: 90vh;
 }
-main #promo .poster {
+main #promo .background {
   height: 100%;
   width: 100vw;
   background-image: url("/Product Landing Page/Pictures/elegance2.webp"), linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(106, 88, 88) 64%);
@@ -137,7 +137,7 @@ main #promo .poster {
   background-repeat: no-repeat;
   background-blend-mode: overlay;
 }
-main #promo .poster h1 {
+main #promo .background h1 {
   color: hsl(240deg, 29%, 92%);
   float: right;
   margin-top: 15rem;
@@ -149,9 +149,36 @@ main #features {
   height: 100vh;
   width: 100vw;
   background-color: hsl(237deg, 24%, 33%);
+  flex-direction: row;
+  justify-content: flex-start;
+}
+main #features .background {
+  height: 100%;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("/Product Landing Page/Pictures/extreme.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+main #features div {
+  width: 40vw;
 }
 main #connections {
   height: 50vh;
+}
+
+.card {
+  height: 18rem;
+  width: 30vw;
+  background-color: hsl(0deg, 47%, 60%);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card p {
+  margin: 1rem;
+  line-height: 1.5rem;
 }
 
 @keyframes enter {
@@ -159,6 +186,20 @@ main #connections {
     margin-top: 10rem;
   }
 }
+#card-1 {
+  margin: 2rem;
+  margin-left: 7rem;
+}
+
+#card-2 {
+  margin-left: 14vw;
+}
+
+#card-3 {
+  margin: 2rem;
+  margin-left: 7rem;
+}
+
 @keyframes enterRight {
   100% {
     margin-left: 50%;

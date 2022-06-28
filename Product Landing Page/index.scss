@@ -121,7 +121,7 @@ main{
     min-height: 100vh;
     #promo{
         height: 90vh;
-        .poster{
+        .background{
             height: 100%;
             width: 100vw;
             background-image: url("/Product Landing Page/Pictures/elegance2.webp"), linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(106,88,88,1) 64%);
@@ -143,9 +143,35 @@ main{
         height: 100vh;
         width: 100vw;
         background-color: $blue;
+        flex-direction: row;
+        justify-content: flex-start;
+        .background{
+            height: 100%;
+            width: 50%;
+            background-color: rgba(0,0,0,0.4);
+            background-image: url("/Product Landing Page/Pictures/extreme.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+        }
+        div{
+            width: 40vw;
+        }
     }
     #connections{
         height: 50vh;
+    }
+}
+.card{
+    height: 18rem;
+    width: 30vw;
+    background-color: $red;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    p{
+        margin: 1rem;
+        line-height: 1.5rem;
     }
 }
 @keyframes enter{
@@ -153,7 +179,17 @@ main{
         margin-top: 10rem;
     }
 }
-
+#card-1{
+    margin: 2rem;
+    margin-left: 7rem;
+}
+#card-2{
+    margin-left: 14vw;
+}
+#card-3{
+    margin: 2rem;
+    margin-left: 7rem ;
+}
 @keyframes enterRight{
     100% {
         margin-left: 50%;
