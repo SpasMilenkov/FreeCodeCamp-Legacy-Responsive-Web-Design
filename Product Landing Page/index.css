@@ -125,10 +125,10 @@ main {
   min-width: 100vw;
   min-height: 100vh;
 }
-main .promo {
-  height: 80vh;
+main #promo {
+  height: 90vh;
 }
-main .promo .poster {
+main #promo .poster {
   height: 100%;
   width: 100vw;
   background-image: url("/Product Landing Page/Pictures/elegance2.webp"), linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(106, 88, 88) 64%);
@@ -137,21 +137,36 @@ main .promo .poster {
   background-repeat: no-repeat;
   background-blend-mode: overlay;
 }
-main .promo .poster h1 {
+main #promo .poster h1 {
   color: hsl(240deg, 29%, 92%);
   float: right;
-  margin-top: 10rem;
+  margin-top: 15rem;
   margin-right: 1rem;
   width: 30%;
   letter-spacing: 0.5rem;
 }
-main .features {
-  height: 50vh;
+main #features {
+  height: 100vh;
   width: 100vw;
   background-color: hsl(237deg, 24%, 33%);
 }
-main .connections {
+main #connections {
   height: 50vh;
+}
+
+@keyframes enter {
+  100% {
+    margin-top: 10rem;
+  }
+}
+@keyframes enterRight {
+  100% {
+    margin-left: 50%;
+  }
+}
+.enterTransition {
+  animation: enter 1.5s forwards;
+  animation-delay: 0s;
 }
 
 /*# sourceMappingURL=index.css.map */

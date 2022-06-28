@@ -119,8 +119,8 @@ nav{
 main{
     min-width: 100vw;
     min-height: 100vh;
-    .promo{
-        height: 80vh;
+    #promo{
+        height: 90vh;
         .poster{
             height: 100%;
             width: 100vw;
@@ -132,19 +132,35 @@ main{
             h1{
                 color: $white;
                 float: right;
-                margin-top: 10rem;
+                margin-top: 15rem;
                 margin-right: 1rem;
                 width: 30%;
                 letter-spacing: 0.5rem;
             }
         }
     }
-    .features{
-        height: 50vh;
+    #features{
+        height: 100vh;
         width: 100vw;
         background-color: $blue;
     }
-    .connections{
+    #connections{
         height: 50vh;
     }
 }
+@keyframes enter{
+    100% {
+        margin-top: 10rem;
+    }
+}
+
+@keyframes enterRight{
+    100% {
+        margin-left: 50%;
+    }
+}
+.enterTransition { 
+    animation: enter 1.5s forwards;
+    animation-delay: 0s;
+}
+  

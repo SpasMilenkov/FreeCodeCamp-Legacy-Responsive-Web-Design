@@ -36,21 +36,39 @@
         </ul>
     </nav>
     <main class="flex">
-        <section class="promo">
+        <section class="" id="promo">
             <div class="poster">
-                <h1 class="heading font-roboto -fs-huge bold">
-                    Smart watches that suit any style
+                <h1 class="heading font-roboto -fs-huge">
+                    Smart watches that suit every style
                 </h1>
             </div>
         </section>
-        <section class="features">
-        </section>
-        <section class="offers">
+        <section class="" id="features">
 
         </section>
-        <footer class="connections">
+        <section class="" id="offers">
+
+        </section>
+        <footer class="" id="connections">
 
         </footer>
     </main>
+    <script>
+        const targets = document.querySelectorAll("h1");
+
+        const transition = target =>{
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting){
+                        const heading = entry.target;
+                        heading.classList.add("enterTransition");
+                        observer.disconnect();
+                    };
+                });
+            });
+            observer.observe(target);
+        };
+        targets.forEach(transition);
+    </script>
 </body>
 </html>
