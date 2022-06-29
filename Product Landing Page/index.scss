@@ -128,49 +128,81 @@ nav{
 main{
     min-width: 100vw;
     min-height: 100vh;
-    #promo{
-        height: 90vh;
-        .background{
-            height: 100%;
-            width: 100vw;
-            background-image: url("/Product Landing Page/Pictures/elegance2.webp"), linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(106,88,88,1) 64%);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-blend-mode:overlay;
-            h1{
+    margin-bottom: auto;
+}
+#promo{
+    height: 90vh;
+    margin-bottom: auto;
+    .background{
+        height: 100%;
+        width: 100vw;
+        background-image: url("/Product Landing Page/Pictures/elegance2.webp"), linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(106,88,88,1) 64%);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode:overlay;
+        h1{
+            color: $white;
+            float: right;
+            margin-top: 15rem;
+            margin-right: 1rem;
+            width: 30%;
+            letter-spacing: 0.5rem;
+        }
+    }
+}
+#features{
+    height: 100vh;
+    width: 100vw;
+    background-color: $blue;
+    flex-direction: row;
+    justify-content: flex-start;
+    .background{
+        height: 100%;
+        width: 50%;
+        background-color: rgba(0,0,0,0.4);
+        background-image: url("/Product Landing Page/Pictures/extreme.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+    div{
+        width: 40vw;
+    }
+}
+#offers{
+    height: 110vh;
+    width: 100vw;
+    margin-bottom: auto;
+    background-color: $dark-blue;
+    .container{
+        width: 95%;
+        height: 95%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "offer1 offer2 offer3"
+        "offer4 offer5 offer6"
+        "offer7 offer8 offer9";
+        div{
+            background-color: $red;
+
+            a{
+                height: 100%;
+                width: 100%;
                 color: $white;
-                float: right;
-                margin-top: 15rem;
-                margin-right: 1rem;
-                width: 30%;
-                letter-spacing: 0.5rem;
             }
         }
     }
-    #features{
-        height: 100vh;
-        width: 100vw;
-        background-color: $blue;
-        flex-direction: row;
-        justify-content: flex-start;
-        .background{
-            height: 100%;
-            width: 50%;
-            background-color: rgba(0,0,0,0.4);
-            background-image: url("/Product Landing Page/Pictures/extreme.webp");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-blend-mode: darken;
-        }
-        div{
-            width: 40vw;
-        }
-    }
-    #connections{
-        height: 50vh;
-    }
+}
+#connections{
+    height: 30%;
+    width: 100vw;
+    background-color: $blue;
+    margin-left: auto;
 }
 .card{
     height: 18rem;
