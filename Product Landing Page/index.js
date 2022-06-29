@@ -1,7 +1,12 @@
+//NAVIGATION TOGGLE
+
+
+//INTERSECTION OBSERVER ANIMATIONS
+
 const targets = document.querySelectorAll("h1");
 const cards =  [...document.getElementsByClassName("card")];
-
-const transition = target =>{
+//all h1s count mainly used for the first header in the promo element
+const headerTransition = target =>{
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if(entry.isIntersecting){
@@ -17,6 +22,7 @@ const transition = target =>{
     });
     observer.observe(target);
 };
+//looks for the cards in the second part
 const cardTransition = target =>{
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -33,5 +39,5 @@ const cardTransition = target =>{
     });
     observer.observe(target);
 };
-targets.forEach(transition);
+targets.forEach(headerTransition);
 cards.forEach(cardTransition);
