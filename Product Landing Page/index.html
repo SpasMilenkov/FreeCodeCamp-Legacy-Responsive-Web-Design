@@ -107,24 +107,6 @@
     <footer class="" id="connections">
 
     </footer>
-    <script>
-        const targets = document.querySelectorAll("h1");
-        const cards =  document.getElementsByClassName("card");
-
-        const transition = target =>{
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if(entry.isIntersecting){
-                        const heading = entry.target;
-                        heading.classList.add("enterTransition");
-                        observer.disconnect();
-                    };
-                });
-            });
-            observer.observe(target);
-        };
-        targets.forEach(transition);
-        cards.forEach(transition);
-    </script>
+    <script src="/Product Landing Page/index.js"></script>
 </body>
 </html>

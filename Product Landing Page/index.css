@@ -132,7 +132,8 @@ nav ul li:hover:after {
 }
 
 main {
-  min-width: 100vw;
+  width: calc(100vw - (100vw - 100%));
+  height: 100%;
   min-height: 100vh;
   margin-bottom: auto;
 }
@@ -161,7 +162,7 @@ main {
 
 #features {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: hsl(237deg, 24%, 33%);
   flex-direction: row;
   justify-content: flex-start;
@@ -177,12 +178,12 @@ main {
   background-blend-mode: darken;
 }
 #features div {
-  width: 40vw;
+  width: 70%;
 }
 
 #offers {
   height: 110vh;
-  width: 100vw;
+  width: 100%;
   margin-bottom: auto;
   background-color: hsl(243deg, 39%, 19%);
 }
@@ -225,12 +226,22 @@ main {
 
 @keyframes enter {
   100% {
-    margin-top: 10rem;
+    margin-top: 10%;
+  }
+}
+@keyframes enterRight {
+  100% {
+    margin-left: 10%;
+  }
+}
+@keyframes enterLeft {
+  100% {
+    margin-right: 10%;
   }
 }
 #card-1 {
   margin: 2rem;
-  margin-left: 7rem;
+  margin-left: 3rem;
 }
 
 #card-2 {
@@ -239,16 +250,21 @@ main {
 
 #card-3 {
   margin: 2rem;
-  margin-left: 7rem;
+  margin-left: 3rem;
 }
 
-@keyframes enterRight {
-  100% {
-    margin-left: 50%;
-  }
-}
-.enterTransition {
+.enterBelow {
   animation: enter 1.5s forwards;
+  animation-delay: 0s;
+}
+
+.enterLeft {
+  animation: enterLeft 1.5s forwards;
+  animation-delay: 0s;
+}
+
+.enterRight {
+  animation: enterRight 1.5s forwards;
   animation-delay: 0s;
 }
 
