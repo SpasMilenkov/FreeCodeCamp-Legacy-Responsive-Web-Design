@@ -130,6 +130,9 @@ nav ul li:after {
 nav ul li:hover:after {
   transform: scaleX(1);
 }
+nav ul li:first-child {
+  display: none;
+}
 
 main {
   width: calc(100vw - (100vw - 100%));
@@ -277,6 +280,19 @@ main {
   nav ul li {
     width: 100%;
     height: 50px;
+    display: none;
+  }
+  nav ul li:first-child {
+    display: flex;
+  }
+  .responsive {
+    height: 15rem;
+  }
+  .responsive ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   #promo .background h1 {
     font-size: 2rem;

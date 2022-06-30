@@ -122,6 +122,9 @@ nav{
             transition: transform 250ms ease-in-out;
           }
         li:hover:after { transform: scaleX(1); }
+        li:first-child{
+            display: none;
+        }
     }
 }
 
@@ -265,10 +268,26 @@ main{
             li{
                 width: 100%;
                 height: 50px;
+                display: none;
+            }
+            li:first-child{
+                display:  flex;
             }
         }
     }
+    .responsive{
+        height: 15rem;
+        ul{
 
+            li{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+             }
+        }
+
+    }
     #promo{
         .background{
             h1{

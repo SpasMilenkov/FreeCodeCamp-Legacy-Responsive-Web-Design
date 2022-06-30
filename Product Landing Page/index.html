@@ -11,10 +11,10 @@
     <title>Product Landing Page Demo</title>
 </head>
 <body class="flex">
-    <nav>
+    <nav id="main-nav">
         <ul class="flex">
             <li class="rounded-corners" id="nav-button">
-                <a href="" class="font-roboto -fs-semi-large bold capitalize flex">
+                <a href="javascript:void(0)" onclick="toggleNav()" class="font-roboto -fs-semi-large bold capitalize flex">
                     <img src="/Product Landing Page/Pictures/menu.webp">
                 </a>
             </li>
@@ -108,5 +108,16 @@
 
     </footer>
     <script src="/Product Landing Page/index.js"></script>
+    <script>
+        const navButton = document.getElementById("nav-button");
+        const navBar = document.getElementById("main-nav");
+        function toggleNav(){
+            if(navBar.classList.contains("responsive")){
+                navBar.classList.remove("responsive");
+                return;
+            }
+            navBar.classList.add("responsive");
+        }
+    </script>
 </body>
 </html>
