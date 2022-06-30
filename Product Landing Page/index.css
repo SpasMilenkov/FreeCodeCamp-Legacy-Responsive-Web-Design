@@ -228,6 +228,7 @@ main {
   width: 30vw;
   background-color: hsl(0deg, 47%, 60%);
   color: white;
+  padding: 1rem;
   gap: 10%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -313,6 +314,41 @@ main {
     100% {
       margin-top: 3%;
     }
+  }
+  #features {
+    height: 125vh;
+    min-height: fit-content;
+    background-color: hsl(237deg, 24%, 33%);
+    flex-direction: column;
+    justify-content: center;
+    background: url("/Product Landing Page/Pictures/extreme.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+  }
+  #features div {
+    width: 90%;
+  }
+  #features .background {
+    display: none;
+  }
+  #offers {
+    height: 300vh;
+  }
+  #offers .container {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "offer1" "offer2" "offer3" "offer4" "offer5" "offer6" "offer7" "offer8" "offer9";
+  }
+  #offers .container div {
+    background-color: hsl(0deg, 47%, 60%);
+  }
+  #offers .container div a {
+    height: 100%;
+    width: 100%;
+    color: hsl(240deg, 29%, 92%);
   }
   .responsive {
     height: 15rem;
