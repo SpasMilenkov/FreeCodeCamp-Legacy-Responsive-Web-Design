@@ -1,6 +1,3 @@
-//NAVIGATION TOGGLE
-
-
 //INTERSECTION OBSERVER ANIMATIONS
 
 const targets = document.querySelectorAll("h1");
@@ -21,6 +18,5 @@ function animations(animationType, arr){
     };
     arr.forEach(transition)
 }
-// targets.forEach(headerTransition);
 animations("enterLeft", cards);
 animations("enterBelow", targets);
