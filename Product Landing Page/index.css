@@ -167,6 +167,9 @@ main {
   flex-direction: row;
   justify-content: flex-start;
 }
+#features div {
+  width: 70%;
+}
 #features .background {
   height: 100%;
   width: 50%;
@@ -176,9 +179,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
-}
-#features div {
-  width: 70%;
+  margin: 0;
 }
 
 #offers {
@@ -229,28 +230,24 @@ main {
     margin-top: 10%;
   }
 }
-@keyframes enterRight {
+@keyframes enterLeft {
   100% {
     margin-left: 10%;
   }
 }
-@keyframes enterLeft {
-  100% {
-    margin-right: 10%;
-  }
-}
 #card-1 {
-  margin: 2rem;
-  margin-left: 3rem;
+  margin: 1rem;
+  margin-left: 25%;
 }
 
 #card-2 {
-  margin-left: 14vw;
+  margin: 1rem;
+  margin-left: 0%;
 }
 
 #card-3 {
-  margin: 2rem;
-  margin-left: 3rem;
+  margin: 1rem;
+  margin-left: 25%;
 }
 
 .enterBelow {
@@ -260,11 +257,6 @@ main {
 
 .enterLeft {
   animation: enterLeft 1.5s forwards;
-  animation-delay: 0s;
-}
-
-.enterRight {
-  animation: enterRight 1.5s forwards;
   animation-delay: 0s;
 }
 
