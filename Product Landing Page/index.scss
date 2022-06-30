@@ -61,6 +61,12 @@ $fs-300: 1rem;
     align-items: center;
     justify-content: center;
 }
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .font-lato{
     font-family: 'Lato', sans-serif;
 }
@@ -215,10 +221,19 @@ main{
     width: 30vw;
     background-color: $red;
     color: white;
+    gap: 10rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     p{
         margin: 1rem;
         line-height: 1.5rem;
+    }
+    img{
+        height: 75%;
+        width: 50%;
+        max-width: 216px;
+        max-height: 216px;
+        min-width: 150px;
+        min-height: 150px;
     }
 }
 @keyframes enter{
