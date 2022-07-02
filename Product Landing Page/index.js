@@ -2,6 +2,8 @@
 
 const targets = document.querySelectorAll("h1");
 const cards =  [...document.getElementsByClassName("card")];
+const container = document.getElementById("offers-grid");
+const offers = [...container.children];
 
 function animations(animationType, arr){
     const transition = target =>{
@@ -20,3 +22,4 @@ function animations(animationType, arr){
 }
 animations("enterLeft", cards);
 animations("enterBelow", targets);
+animations("enterUp", offers);
