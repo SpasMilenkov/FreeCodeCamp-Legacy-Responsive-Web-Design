@@ -122,10 +122,11 @@ main {
 
 #promo {
   height: 90vh;
-  margin-bottom: auto; }
+  margin-bottom: auto;
+  width: 100%; }
   #promo .background {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-image: url("/Product Landing Page/Pictures/elegance2.webp"), linear-gradient(90deg, black 0%, #6a5858 64%);
     background-position: center;
     background-size: cover;
@@ -160,7 +161,7 @@ main {
     margin: 0; }
 
 #offers {
-  height: 120vh;
+  height: 130vh;
   min-height: fit-content;
   width: 100%;
   margin-bottom: auto;
@@ -177,12 +178,10 @@ main {
     align-items: center;
     justify-content: center; }
     #offers .container div {
-      background-color: #c96969;
       width: 30vw;
       height: 30vh;
       min-width: 300px;
-      margin-bottom: 15%;
-      margin-top: 3%;
+      margin-top: 2rem;
       margin-left: 5px;
       margin-right: 5px; }
       #offers .container div a {
@@ -226,7 +225,7 @@ main {
     margin-left: 5%; } }
 @keyframes enterUp {
   100% {
-    margin-bottom: 3%; } }
+    margin-top: 1r0 0.5; } }
 #card-1 {
   margin: 1rem;
   margin-left: 25%; }
@@ -250,6 +249,14 @@ main {
 .enterUp {
   animation: enterUp 1.5s forwards;
   animation-delay: 0s; }
+
+.offerBackground {
+  -webkit-transform: translate3d(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken; }
 
 @media only screen and (max-width: 750px) {
   nav {

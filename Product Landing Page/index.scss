@@ -143,9 +143,10 @@ main{
 #promo{
     height: 90vh;
     margin-bottom: auto;
+    width: 100%;
     .background{
         height: 100%;
-        width: 100vw;
+        width: 100%;
         background-image: url("/Product Landing Page/Pictures/elegance2.webp"), linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(106,88,88,1) 64%);
         background-position: center;
         background-size: cover;
@@ -185,7 +186,7 @@ main{
 
 }
 #offers{
-    height: 120vh;
+    height: 130vh;
     min-height: fit-content;
     width: 100%;
     margin-bottom: auto;
@@ -202,12 +203,10 @@ main{
         align-items: center;
         justify-content: center;
         div{
-            background-color: $red;
             width: 30vw;
             height: 30vh;
             min-width: 300px;
-            margin-bottom: 15%;
-            margin-top: 3%;
+            margin-top: 2rem; 
             margin-left: 5px;
             margin-right: 5px;
 
@@ -261,7 +260,7 @@ main{
 }
 @keyframes enterUp{
     100% {
-        margin-bottom: 3%;
+        margin-top: 1r0.5;
     }
 }
 #card-1{
@@ -289,7 +288,14 @@ main{
     animation: enterUp 1.5s forwards;
     animation-delay: 0s;
 }
-
+.offerBackground{
+    -webkit-transform: translate3d(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
 @media only screen and (max-width: 750px){
     nav{
         width: 100%;
