@@ -16,349 +16,292 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 .flex {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .flex-row {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .font-lato {
-  font-family: "Lato", sans-serif;
-}
+  font-family: 'Lato', sans-serif; }
 
 .font-roboto {
-  font-family: "Roboto", sans-serif;
-}
+  font-family: 'Roboto', sans-serif; }
 
 .-fs-huge {
-  font-size: 6.25rem;
-}
+  font-size: 6.25rem; }
 
 .-fs-large {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 .-fs-semi-large {
-  font-size: 1.75rem;
-}
+  font-size: 1.75rem; }
 
 .-fs-medium {
-  font-size: 1.125rem;
-}
+  font-size: 1.125rem; }
 
 .-fs-small {
-  font-size: var(1rem);
-}
+  font-size: var(1rem); }
 
 .capitalize {
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .rounded-corners {
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 .bold {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 body {
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 nav {
   width: 100%;
   height: 10vh;
-  background-color: hsl(243deg, 39%, 19%);
-}
-nav ul {
-  flex-direction: row-reverse !important;
-  justify-content: flex-start !important;
-  height: 100%;
-}
-nav ul li {
-  width: 150px;
-  height: 70%;
-  margin: 10px;
-}
-nav ul li a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: hsl(240deg, 29%, 92%);
-}
-nav ul li:after {
-  display: block;
-  content: "";
-  border-bottom: solid 3px hsl(240deg, 29%, 92%);
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-}
-nav ul li:hover:after {
-  transform: scaleX(1);
-}
-nav ul li:first-child {
-  display: none;
-}
+  background-color: #1f1e43; }
+  nav ul {
+    flex-direction: row-reverse !important;
+    justify-content: flex-start !important;
+    height: 100%; }
+    nav ul li {
+      width: 150px;
+      height: 70%;
+      margin: 10px; }
+      nav ul li a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #e5e5f1; }
+    nav ul li:after {
+      display: block;
+      content: '';
+      border-bottom: solid 3px #e5e5f1;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out; }
+    nav ul li:hover:after {
+      transform: scaleX(1); }
+    nav ul li:first-child {
+      display: none; }
 
 main {
   width: calc(100vw - (100vw - 100%));
   height: 100%;
   min-height: 100vh;
-  margin-bottom: auto;
-}
+  margin-bottom: auto; }
 
 #promo {
   height: 90vh;
-  margin-bottom: auto;
-}
-#promo .background {
-  height: 100%;
-  width: 100vw;
-  background-image: url("/Product Landing Page/Pictures/elegance2.webp"), linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(106, 88, 88) 64%);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
-}
-#promo .background h1 {
-  color: hsl(240deg, 29%, 92%);
-  float: right;
-  margin-top: 15rem;
-  margin-right: 1rem;
-  width: 30%;
-  letter-spacing: 0.5rem;
-}
+  margin-bottom: auto; }
+  #promo .background {
+    height: 100%;
+    width: 100vw;
+    background-image: url("/Product Landing Page/Pictures/elegance2.webp"), linear-gradient(90deg, black 0%, #6a5858 64%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay; }
+    #promo .background h1 {
+      color: #e5e5f1;
+      float: right;
+      margin-top: 15rem;
+      margin-right: 1rem;
+      width: 30%;
+      letter-spacing: 0.5rem; }
 
 #features {
+  overflow-x: hidden;
   height: 100vh;
   width: 100%;
-  background-color: hsl(237deg, 24%, 33%);
+  background-color: #404268;
   flex-direction: row;
-  justify-content: flex-start;
-}
-#features div {
-  width: 70%;
-}
-#features .background {
-  height: 100%;
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-image: url("/Product Landing Page/Pictures/extreme.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-  margin: 0;
-}
+  justify-content: flex-start; }
+  #features div {
+    width: 70%; }
+  #features .background {
+    height: 100%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url("/Product Landing Page/Pictures/extreme.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    margin: 0; }
 
 #offers {
-  height: 110vh;
+  height: 120vh;
+  min-height: fit-content;
   width: 100%;
   margin-bottom: auto;
-  background-color: hsl(243deg, 39%, 19%);
-}
-#offers .container {
-  width: 95%;
-  height: 95%;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "offer1 offer2 offer3" "offer4 offer5 offer6" "offer7 offer8 offer9";
-}
-#offers .container div {
-  background-color: hsl(0deg, 47%, 60%);
-}
-#offers .container div a {
-  height: 100%;
-  width: 100%;
-  color: hsl(240deg, 29%, 92%);
-}
+  background-color: #1f1e43;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+  #offers .container {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    #offers .container div {
+      background-color: #c96969;
+      width: 30vw;
+      height: 30vh;
+      min-width: 300px;
+      margin-bottom: 15%;
+      margin-top: 3%;
+      margin-left: 5px;
+      margin-right: 5px; }
+      #offers .container div a {
+        height: 100%;
+        width: 100%;
+        color: #e5e5f1; }
+
+#offers::-webkit-scrollbar {
+  display: none; }
 
 #connections {
   height: 30%;
   width: 100vw;
-  background-color: hsl(237deg, 24%, 33%);
-  margin-left: auto;
-}
+  background-color: #404268;
+  margin-left: auto; }
 
 .card {
-  height: 18rem;
+  height: 15rem;
   width: 30vw;
-  background-color: hsl(0deg, 47%, 60%);
+  background-color: #c96969;
   color: white;
   padding: 1rem;
   gap: 10%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.card p {
-  margin: 1rem;
-  line-height: 1.5rem;
-}
-.card img {
-  height: auto;
-  width: 50%;
-  max-width: 216px;
-  max-height: 216px;
-  min-width: 75px;
-  min-height: 75px;
-}
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+  .card p {
+    margin: 1rem;
+    line-height: 1.5rem; }
+  .card img {
+    height: auto;
+    width: 50%;
+    max-width: 216px;
+    max-height: 216px;
+    min-width: 75px;
+    min-height: 75px; }
 
 @keyframes enter {
   100% {
-    margin-top: 10%;
-  }
-}
+    margin-top: 10%; } }
 @keyframes enterLeft {
   100% {
-    margin-left: 10%;
-  }
-}
+    margin-left: 5%; } }
+@keyframes enterUp {
+  100% {
+    margin-bottom: 3%; } }
 #card-1 {
   margin: 1rem;
-  margin-left: 25%;
-}
+  margin-left: 25%; }
 
 #card-2 {
   margin: 1rem;
-  margin-left: 0%;
-}
+  margin-left: -5%; }
 
 #card-3 {
   margin: 1rem;
-  margin-left: 25%;
-}
+  margin-left: 25%; }
 
 .enterBelow {
   animation: enter 1.5s forwards;
-  animation-delay: 0s;
-}
+  animation-delay: 0s; }
 
 .enterLeft {
   animation: enterLeft 1.5s forwards;
-  animation-delay: 0s;
-}
+  animation-delay: 0s; }
+
+.enterUp {
+  animation: enterUp 1.5s forwards;
+  animation-delay: 0s; }
 
 @media only screen and (max-width: 750px) {
   nav {
     width: 100%;
     height: 55px;
-    background-color: hsl(243deg, 39%, 19%);
+    background-color: #1f1e43;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
-  }
-  nav ul {
-    height: 100%;
-    flex-direction: column !important;
-  }
-  nav ul li {
-    width: 100%;
-    height: 50px;
-    display: none;
-  }
-  nav ul li:first-child {
-    display: flex;
-  }
+    align-items: center; }
+    nav ul {
+      height: 100%;
+      flex-direction: column !important; }
+      nav ul li {
+        width: 100%;
+        height: 50px;
+        display: none; }
+      nav ul li:first-child {
+        display: flex; }
+
   #promo .background h1 {
     font-size: 2.5rem;
-    color: hsl(240deg, 29%, 92%);
+    color: #e5e5f1;
     margin-top: 15rem;
     margin-right: 1rem;
     width: 75%;
-    letter-spacing: 0.4rem;
-  }
+    letter-spacing: 0.4rem; }
   @keyframes enter {
     100% {
-      margin-top: 3%;
-    }
-  }
+      margin-top: 3%; } }
   #features {
     height: 125vh;
     min-height: fit-content;
-    background-color: hsl(237deg, 24%, 33%);
+    background-color: #404268;
     flex-direction: column;
     justify-content: center;
     background: url("/Product Landing Page/Pictures/extreme.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: overlay;
-  }
-  #features div {
-    width: 90%;
-  }
-  #features .background {
-    display: none;
-  }
-  #offers {
-    height: 300vh;
-  }
-  #offers .container {
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "offer1" "offer2" "offer3" "offer4" "offer5" "offer6" "offer7" "offer8" "offer9";
-  }
-  #offers .container div {
-    background-color: hsl(0deg, 47%, 60%);
-  }
-  #offers .container div a {
-    height: 100%;
-    width: 100%;
-    color: hsl(240deg, 29%, 92%);
-  }
+    background-blend-mode: overlay; }
+    #features div {
+      width: 90%; }
+    #features .background {
+      display: none; }
+
   .responsive {
-    height: 15rem;
-  }
-  .responsive ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-}
+    height: 15rem; }
+    .responsive ul li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; } }
 
 /*# sourceMappingURL=index.css.map */

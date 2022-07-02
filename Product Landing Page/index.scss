@@ -162,6 +162,7 @@ main{
     }
 }
 #features{
+    overflow-x: hidden;
     height: 100vh;
     width: 100%;
     background-color: $blue;
@@ -184,23 +185,31 @@ main{
 
 }
 #offers{
-    height: 110vh;
+    height: 120vh;
+    min-height: fit-content;
     width: 100%;
     margin-bottom: auto;
     background-color: $dark-blue;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     .container{
         width: 95%;
-        height: 95%;
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "offer1 offer2 offer3"
-        "offer4 offer5 offer6"
-        "offer7 offer8 offer9";
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         div{
             background-color: $red;
+            width: 30vw;
+            height: 30vh;
+            min-width: 300px;
+            margin-bottom: 15%;
+            margin-top: 3%;
+            margin-left: 5px;
+            margin-right: 5px;
 
             a{
                 height: 100%;
@@ -210,6 +219,9 @@ main{
         }
     }
 }
+#offers::-webkit-scrollbar{
+    display: none;
+}
 #connections{
     height: 30%;
     width: 100vw;
@@ -217,7 +229,7 @@ main{
     margin-left: auto;
 }
 .card{
-    height: 18rem;
+    height: 15rem;
     width: 30vw;
     background-color: $red;
     color: white;
@@ -244,7 +256,12 @@ main{
 }
 @keyframes enterLeft{
     100% {
-        margin-left: 10%;
+        margin-left: 5%;
+    }
+}
+@keyframes enterUp{
+    100% {
+        margin-bottom: 3%;
     }
 }
 #card-1{
@@ -253,7 +270,7 @@ main{
 }
 #card-2{
     margin: 1rem;
-    margin-left: 0%;
+    margin-left: -5%;
 }
 #card-3{
     margin: 1rem;
@@ -266,6 +283,10 @@ main{
 }
 .enterLeft{
     animation: enterLeft 1.5s forwards;
+    animation-delay: 0s;
+}
+.enterUp{
+    animation: enterUp 1.5s forwards;
     animation-delay: 0s;
 }
 
@@ -321,38 +342,12 @@ main{
         background-blend-mode:overlay;
         div{
             width: 90%;
+            
         }
         .background{
             display:none;
         }
     
-    }
-    #offers{
-        height: 300vh;
-        .container{
-            gap: 1rem;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas: 
-            "offer1" 
-            "offer2" 
-            "offer3"
-            "offer4" 
-            "offer5" 
-            "offer6"
-            "offer7" 
-            "offer8" 
-            "offer9";
-            div{
-                background-color: $red;
-    
-                a{
-                    height: 100%;
-                    width: 100%;
-                    color: $white;
-                }
-            }
-        }
     }
     .responsive{
         height: 15rem;
